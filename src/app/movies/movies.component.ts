@@ -20,6 +20,7 @@ export class MoviesComponent implements OnInit {
       Prikaz: true,
     },
     {
+<<<<<<< HEAD
       filmID: 2,
       Naziv: 'Top Gun: Maverick',
       Godina: '2022',
@@ -44,5 +45,20 @@ export class MoviesComponent implements OnInit {
       if (this.movies[i].filmID == id)
         this.movies[i].Prikaz = !this.movies[i].Prikaz;
     }
+=======
+      Naziv: 'Top Gun: Maverick',
+      Godina: '2022',
+      Zanr: 'Akacija',
+      Trajanje: '2h',
+      Rating: '5',
+      Opis: 'Kroz film se definitivno osjeća nostalgija za vremenima kada su snimani ovakvi filmovi, a sada je jedan takav naslov došao uz sve što nudi moderno kreiranje filmova.',
+      Poster: 'assets/slikafilma.jpg',
+    },
+  ];
+  showOpis: boolean = false;
+
+  toggleOpis() {
+    this.showOpis = !this.showOpis;
+>>>>>>> 8109cfeaad9ed6ccdd8fc64626e4ff14014fd6d0
   }
 }
