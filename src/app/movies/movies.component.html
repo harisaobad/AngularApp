@@ -20,9 +20,13 @@
         <td>{{ movie.Trajanje }}</td>
         <td>{{ movie.Rating }}</td>
         <td>
-          <span *ngIf="showOpis">{{ movie.Opis }}</span>
-          <button type="button" (click)="toggleOpis()">
-            {{ showOpis == true ? "Hide" : "Show" }}
+          <p *ngIf="movie.Prikaz">{{ movie.Opis }}</p>
+          <button
+            type="button"
+            class="btn"
+            (click)="toggleDescriptionMovie(movie.filmID)"
+          >
+            {{ movie.Prikaz ? "Hide" : "Show" }}
           </button>
         </td>
 

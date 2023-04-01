@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IActors } from './actors';
 
 @Component({
   selector: 'app-actors',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./actors.component.css'],
 })
 export class ActorsComponent {
-  actors = [
+  actors: IActors[] = [
     {
       Ime: 'Tom',
       Prezime: 'Cruise',
@@ -19,18 +20,21 @@ export class ActorsComponent {
       Prezime: 'Connelly',
       Datum: '5.11.',
       Slika: 'assets/glumac2.jpg',
+      ImageWidth: 318,
     },
     {
       Ime: 'Miles',
       Prezime: 'Teller',
       Datum: '10.12.',
       Slika: 'assets/glumac3.jpg',
+      ImageWidth: 318,
     },
     {
       Ime: 'Val',
       Prezime: 'Kilmer',
       Datum: '4.4.',
       Slika: 'assets/gluma4.jpg',
+      ImageWidth: 318,
     },
   ];
 }
